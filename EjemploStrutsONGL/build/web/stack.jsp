@@ -1,7 +1,7 @@
 
 <?xml version="1.0" encoding="UTF-8"?>
 <%-- 
-    Document   : Stack
+    Document   : stack
     Created on : 21-jul-2014, 11:57:29
     Author     : inmaculada.garcia
 --%>
@@ -22,5 +22,11 @@
             <li><strong>Salario: </strong> <s:property value="salario"/></li>
             <li><strong>Nombre: </strong> <s:property value="nombre"/> </li>
         </ul>
+            <%-- Usamos el ValueStack por medio de índices: --%>
+        <ul>
+            <li><strong>Animal: </strong> <s:property value="[0].nombre"/></li>
+            <li><strong>Persona: </strong> <s:property value="[1].nombre"/> </li>
+        </ul>
+        <p><a href="index.jsp">Inicio</a></p>
     </body>
 </html>

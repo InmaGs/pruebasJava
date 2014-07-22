@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class stack_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class Stack_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -80,6 +80,18 @@ public final class stack_jsp extends org.apache.jasper.runtime.HttpJspBase
         return;
       out.write(" </li>\n");
       out.write("        </ul>\n");
+      out.write("            ");
+      out.write("\n");
+      out.write("        <ul>\n");
+      out.write("            <li><strong>Animal: </strong> ");
+      if (_jspx_meth_s_property_3(_jspx_page_context))
+        return;
+      out.write("</li>\n");
+      out.write("            <li><strong>Persona: </strong> ");
+      if (_jspx_meth_s_property_4(_jspx_page_context))
+        return;
+      out.write(" </li>\n");
+      out.write("        </ul>\n");
       out.write("    </body>\n");
       out.write("</html>\n");
     } catch (Throwable t) {
@@ -146,6 +158,42 @@ public final class stack_jsp extends org.apache.jasper.runtime.HttpJspBase
       return true;
     }
     _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_2);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_property_3(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:property
+    org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_property_3 = (org.apache.struts2.views.jsp.PropertyTag) _jspx_tagPool_s_property_value_nobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
+    _jspx_th_s_property_3.setPageContext(_jspx_page_context);
+    _jspx_th_s_property_3.setParent(null);
+    _jspx_th_s_property_3.setValue("[0].nombre");
+    int _jspx_eval_s_property_3 = _jspx_th_s_property_3.doStartTag();
+    if (_jspx_th_s_property_3.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_3);
+      return true;
+    }
+    _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_3);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_property_4(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:property
+    org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_property_4 = (org.apache.struts2.views.jsp.PropertyTag) _jspx_tagPool_s_property_value_nobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
+    _jspx_th_s_property_4.setPageContext(_jspx_page_context);
+    _jspx_th_s_property_4.setParent(null);
+    _jspx_th_s_property_4.setValue("[1].nombre");
+    int _jspx_eval_s_property_4 = _jspx_th_s_property_4.doStartTag();
+    if (_jspx_th_s_property_4.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_4);
+      return true;
+    }
+    _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_4);
     return false;
   }
 }
