@@ -42,16 +42,24 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
       out.write("\n");
+      out.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
       out.write("\n");
       out.write("\n");
-      out.write("<!DOCTYPE html>\n");
-      out.write("<html>\n");
+      out.write("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\"\n");
+      out.write("    \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">\n");
+      out.write("<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"es\" >\n");
       out.write("    <head>\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <title>JSP Page</title>\n");
+      out.write("        <title>JSP Page Index</title>\n");
       out.write("    </head>\n");
       out.write("    <body>\n");
-      out.write("        <h1>Hello World!</h1>\n");
+      out.write("        <h1>Lista de los ejemplos:</h1>\n");
+      out.write("        <ul>\n");
+      out.write("            <li><a href=\"Stack.action\">ValueStack</a></li>\n");
+      out.write("            <li><a href=\"saludo.action\">Saludo</a></li>\n");
+      out.write("        </ul>\n");
+      out.write("        \n");
+      out.write("     \n");
       out.write("    </body>\n");
       out.write("</html>\n");
     } catch (Throwable t) {

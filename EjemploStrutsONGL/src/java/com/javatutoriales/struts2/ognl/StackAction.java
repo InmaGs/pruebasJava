@@ -25,7 +25,7 @@ import com.javatutoriales.struts2.ognl.modelo.Persona;
 
 //Asignamos los valores de las anotaciones.
 @Namespace(value="/")
-@Action(value="stack", results={@Result(location="/stack.jsp")})
+@Action(value="Stack", results={@Result(location="/Stack.jsp")})
 
 //Extendemos la clase principal
 public class StackAction extends ActionSupport{
@@ -43,10 +43,10 @@ public class StackAction extends ActionSupport{
         
         Persona persona = new Persona();
         persona.setNombre("Nombre de la Persona");
-        persona.setSalario("Realmente Poco");
+        persona.setSalario("Salario Precario");
         
-        stack.push(persona);
         stack.push(animal);
+        stack.push(persona);
         
         return SUCCESS;
     }
