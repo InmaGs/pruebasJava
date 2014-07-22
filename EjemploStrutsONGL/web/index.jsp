@@ -18,6 +18,7 @@
         <ul>
             <li><a href="Stack.action">ValueStack</a></li>
             <li><a href="saludo.action">Saludo</a></li>
+            <li><a href="datos.action">Datos</a></li>
         </ul>
         
      
