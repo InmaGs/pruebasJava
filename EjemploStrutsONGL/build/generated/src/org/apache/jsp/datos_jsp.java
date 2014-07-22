@@ -4,17 +4,27 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class datos_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
 
   private static java.util.List<String> _jspx_dependants;
 
+  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_s_property_value_nobody;
+
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
 
   public java.util.List<String> getDependants() {
     return _jspx_dependants;
+  }
+
+  public void _jspInit() {
+    _jspx_tagPool_s_property_value_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+  }
+
+  public void _jspDestroy() {
+    _jspx_tagPool_s_property_value_nobody.release();
   }
 
   public void _jspService(HttpServletRequest request, HttpServletResponse response)
@@ -42,26 +52,33 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
       out.write("\n");
-      out.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
       out.write("\n");
       out.write("\n");
-      out.write("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\"\n");
-      out.write("    \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">\n");
-      out.write("<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"es\" >\n");
+      out.write("\n");
+      out.write("<!DOCTYPE html>\n");
+      out.write("<html>\n");
       out.write("    <head>\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <title>JSP Page Index</title>\n");
+      out.write("        <title>JSP Page</title>\n");
       out.write("    </head>\n");
       out.write("    <body>\n");
-      out.write("        <h1>Lista de los ejemplos:</h1>\n");
-      out.write("        <ul>\n");
-      out.write("            <li><a href=\"Stack.action\">ValueStack</a></li>\n");
-      out.write("            <li><a href=\"saludo.action\">Saludo</a></li>\n");
-      out.write("            <li><a href=\"datos.action\">Datos</a></li>\n");
-      out.write("            <li><a href=\"constantes.jsp\">Constantes</a></li>\n");
-      out.write("        </ul>\n");
-      out.write("        \n");
-      out.write("     \n");
+      out.write("        <h1>Prueba de Sesión con Struts2</h1>\n");
+      out.write("        <p>\n");
+      out.write("            ");
+      out.write("\n");
+      out.write("            ");
+      out.write("\n");
+      out.write("            ");
+      out.write("\n");
+      out.write("            ");
+      out.write("\n");
+      out.write("            ");
+      if (_jspx_meth_s_property_0(_jspx_page_context))
+        return;
+      out.write("\n");
+      out.write("            ");
+      out.write("\n");
+      out.write("        </p>\n");
       out.write("    </body>\n");
       out.write("</html>\n");
     } catch (Throwable t) {
@@ -75,5 +92,23 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
     } finally {
       _jspxFactory.releasePageContext(_jspx_page_context);
     }
+  }
+
+  private boolean _jspx_meth_s_property_0(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:property
+    org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_property_0 = (org.apache.struts2.views.jsp.PropertyTag) _jspx_tagPool_s_property_value_nobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
+    _jspx_th_s_property_0.setPageContext(_jspx_page_context);
+    _jspx_th_s_property_0.setParent(null);
+    _jspx_th_s_property_0.setValue("#parameters.dato");
+    int _jspx_eval_s_property_0 = _jspx_th_s_property_0.doStartTag();
+    if (_jspx_th_s_property_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_0);
+      return true;
+    }
+    _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_0);
+    return false;
   }
 }
