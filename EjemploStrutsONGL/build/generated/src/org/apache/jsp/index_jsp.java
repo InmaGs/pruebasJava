@@ -58,6 +58,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            <li><a href=\"Stack.action\">ValueStack</a></li>\n");
       out.write("            <li><a href=\"saludo.action\">Saludo</a></li>\n");
       out.write("            <li><a href=\"datos.action\">Datos</a></li>\n");
+      out.write("            <li><a href=\"constantes.jsp\">Constantes</a></li>\n");
       out.write("        </ul>\n");
       out.write("        \n");
       out.write("     \n");
